@@ -1,2 +1,3 @@
 #!/bin/bash
-su betty
+username=$(whoami)
+echo "Effective username: $username"
