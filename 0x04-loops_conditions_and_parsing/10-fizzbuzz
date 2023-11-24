@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Perform a fizzbuzz game
+
+for val in {1..100}
+do
+  if (( val % 3 == 0 && val % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( val % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( val % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$val"
+  fi
+done

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Lorem ipsum sit amet adipiscing.
+
+iter=1
+
+while [ $iter -le 20 ]
+do
+  echo "$iter"
+  case $iter in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( iter++ ))
+done

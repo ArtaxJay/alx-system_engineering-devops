@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Dolor sit amet.
+
+lst=$(ls)
+
+for iter in $lst; do
+  echo "$iter" | cut -d '-' -f2
+done

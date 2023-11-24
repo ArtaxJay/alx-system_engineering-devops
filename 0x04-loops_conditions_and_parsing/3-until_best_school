@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Looping with 'until' in shell
+
+i=0
+
+until [ $i -eq 10 ]
+do
+  echo "Best School"
+  (( i++ ))
+done

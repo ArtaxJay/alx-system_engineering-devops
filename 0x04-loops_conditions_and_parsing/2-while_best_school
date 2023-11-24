@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Lorem ispum use while loop
+
+iterator=0
+
+while [ $iterator -lt 10 ]
+do
+  echo "Best School"
+  (( iterator++ ))
+done

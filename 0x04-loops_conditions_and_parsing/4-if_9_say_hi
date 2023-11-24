@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Lorem ipsum dolor sit
+
+iterator=0
+
+while [ $iterator -lt 10 ]
+do
+  if [ $iterator -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( iterator++ ))
+done
