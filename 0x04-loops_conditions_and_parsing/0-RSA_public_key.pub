@@ -1,1 +1,3 @@
+#!/bin/env bash
+# My shareable ssh public key
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCigojwUIS9B2OUFM/ojxX4VhS5AyPgvff9zgTPSNQomYoQMaAatk7Frxz00PuJxIKUCDrb9JhAlVhOpGZ+9oYx8rwPVZ2qsJDpkD+/EwaLIkSsi/2/eSxPIIgP6cwsXaAqJSQ/6GgmQbkArV2qi7Tz1TgdhYSWDA9hMRz2Hpt+6FjR8F15CPT1sABY70vfnKzAGK2/ZLOLb5xHJ/8SnSbfaMNbIT09U5yNSLFyYE4xdtF5MvMrLICCmpV4r/yhq26i3zmR9+3c15KirarfORpX7ZCjuoEtJ8J6VkVfbsuMyohT7H3sR7/OOUhMvNu7r55ns+x/hj5vnGu2WVbRAC1X kayodeoluwajuwon9@gmail.com
