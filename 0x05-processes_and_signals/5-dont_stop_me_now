@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Will kill 4-to_infinity_and_beyond infinite looping process.
+
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
