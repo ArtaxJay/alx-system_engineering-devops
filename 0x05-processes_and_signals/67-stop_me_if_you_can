@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Another way to kill 4-to_infinity_and_beyond infinite looping process.
 
-pkill -f 4-to_infinity_and_beyond
+pkill -f 7-highlander
