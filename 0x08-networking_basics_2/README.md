@@ -1,0 +1,15 @@
+# 0x08. Networking basics #1
+
+# Learning Objectives
+At the end of this project:
+
+# General
+- What is localhost/127.0.0.1
+- What is 0.0.0.0
+- What is /etc/hosts
+- How to display your machine’s active network interfaces
+
+# Project is Done by:
+Ola-Oluwajuwon
+
+# For ALX SE Programme
