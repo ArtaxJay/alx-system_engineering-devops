@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# IP + ports == socket
+
+netstat -l --program
