@@ -1,4 +1,4 @@
-#!/usr/bin/pup
+#!/usr/bin/pu
 # This mani file will install Flask lib of ver (2.1.0)
 
 package { 'flask':
