@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Generates a new RSA key pair,
+# specifies the bit sixe -b=4096,
+# specifies the filename -f=school,
+# specifies the gen algorith -t=rsa,
+# specifies the passphrase -N=betty.
+
+ssh-keygen -b 4096 -f school -t rsa -N betty
