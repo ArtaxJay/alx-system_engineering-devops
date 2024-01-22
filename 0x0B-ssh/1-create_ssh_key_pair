@@ -5,4 +5,4 @@
 # specifies the gen algorith -t=rsa,
 # specifies the passphrase -N=betty.
 
-ssh-keygen -b 4096 -f school -t rsa -N betty
+ssh-keygen -b 4096 -C vagrant@ubuntu -f school -t rsa -N betty
