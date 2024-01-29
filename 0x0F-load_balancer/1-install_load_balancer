@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# This script will install HAProxy Load balancer
+
+apt-get install -y software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-1.8
+apt-get -y update
+apt-get install -y haproxy=1.8.\*
+
+echo "ENABLED=1" > /etc/default/haproxy
+
+# Make HAProxy Balancer manage web1 and web2 servers by Round-Robin method
+echo "
+   listen load_balancer
+   bind *:80
+   mode http
+   balance roundrobin
+   option httpclose
+   option forwardfor
+   server 425843-web-01 3.85.33.232:80 check
+   server 425843-web-02 54.90.63.56:80 check
+" >> /etc/haproxy/haproxy.cfg
+
+# Start the load balancer after config
+service haproxy start
