@@ -1,4 +1,5 @@
-# Fix problem of high amount files opened
+# This Puppet Manifest will change the OS config so as
+# to allow login with 'holberton' user and open a file without any error message.
 
 exec {'replace-1':
   provider => shell,
@@ -10,3 +11,5 @@ exec {'replace-2':
   provider => shell,
   command  => 'sudo sed -i "s/nofile 4/nofile 40000/" /etc/security/limits.conf',
 }
+
+# ArtaxJay proj
