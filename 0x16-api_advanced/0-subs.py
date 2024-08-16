@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Use the Request module to get total Subreddit Subcribers from Reddit APIs."""
+"""Use the Request mod to get total Subreddit Subcribers frm RedditAPIs"""
 import requests
 
 
