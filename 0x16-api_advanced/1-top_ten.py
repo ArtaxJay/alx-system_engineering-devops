@@ -15,10 +15,10 @@ def top_ten(subreddit):
         "limit": 10
     }
     res = requests.get(url, headers=headers, params=params,
-                            allow_redirects=False)
+                       allow_redirects=False)
     if res.status_code == 404:
         print("None")
         return
     results = res.json().get("data")
-    [print(child.get("data").get("title")) for child in 
-                            results.get("children")]
+    [print(child.get("data").get("title")) for child in
+     results.get("children")]

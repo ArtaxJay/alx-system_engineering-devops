@@ -2,6 +2,7 @@
 """Use the Request mod to get hot articles from Reddit APIs."""
 import requests
 
+
 def recurse(subreddit, hot_list=[]):
     """Parent function."""
 
@@ -23,7 +24,7 @@ def recurse(subreddit, hot_list=[]):
             "limit": 100
         }
         res = requests.get(url, headers=headers, params=params,
-                                allow_redirects=False)
+                           allow_redirects=False)
         if res.status_code == 404:
             return None
 
