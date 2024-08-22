@@ -1,13 +1,26 @@
+# Nginx Config file to serve /airbnb-onepage/ route.
+
 server {
-    listen 80;
+    # Listen on port default:80
+    listen      80 default_server;
+    listen      [::]:80 default_server;
+
+    # Provide IP address 
     server_name 100.25.221.102;
 
-    location /airbnb-onepage/ {
-        proxy_pass http://127.0.0.1:5000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
+    # Set HTTP header res msg.
+    add_header  X-Served-By 375-web-01;
+
+    # From AirBnB_clone_v2 serve /airbnb-onepage/
+    location = /airbnb-onepage/ {
+        proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+    }
+
+    # Missing / not found routes
+    error_page 404 /404.html;
+    location /404 {
+        root /var/www/html;
+        internal;
     }
 }
 
