@@ -1,13 +1,12 @@
 # Optimize Nginx server to handle bulky requests successfully
 
-file_line { 'increase_ulimit':
-  path  => '/etc/default/nginx',
-  line  => 'ULIMIT="-n 4096"',
-  match => '^ULIMIT="-n',
-  notify => Exec['restart_nginx'],
+exec {'replace':
+  provider => shell,
+  command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
+  before   => Exec['restart'],
 }
 
-exec { 'restart_nginx':
-  command     => 'service nginx restart',
-  refreshonly => true,
+exec {'restart':
+  provider => shell,
+  command  => 'sudo service nginx restart',
 }
